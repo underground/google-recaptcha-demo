@@ -1,0 +1,10 @@
+service: google-recaptcha-demo
+runtime: nodejs
+api_version: 1
+env: flex
+env_variables:
+  RECAPTCHA_SITE_KEY: 'YOUR_SITE_KEY'
+  RECAPTCHA_SECRET_KEY: 'YOUR_SECRET_KEY'
+instance_class: F1
+automatic_scaling:
+  min_idle_instances: 0
